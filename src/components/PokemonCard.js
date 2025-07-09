@@ -6,14 +6,14 @@ export default function PokemonCard({ name, url }) {
 
   return (
     <Link href={`/pokemon/${id}`}>
-      <div className="bg-white rounded shadow-md p-4 hover:bg-blue-100 text-center justify-items-center cursor-pointer transition">
+      <div className=" group bg-white rounded shadow-md p-4 hover:bg-blue-100 text-center justify-items-center cursor-pointer transition">
         <Image
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}
           alt={name}
           width={150}
           height={150}
         />
-        <p className="capitalize font-medium mt-2">{name}</p>
+        <p className="capitalize font-medium mt-2 text-black group-hover:font-semibold">{name}</p>
       </div>
     </Link>
   );
